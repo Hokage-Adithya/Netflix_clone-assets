@@ -1,0 +1,585 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.background {
+    background: url("assets/Thumbnail.jpg");
+    background-size: max(1200px, 100vw);
+    height: 90vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /*border-bottom: 5px solid rgba(128, 0, 128, 0.502);  */
+}
+
+.background .box {
+    width: 100vw;
+    height: 90vh;
+    position: absolute;
+    top: 0;
+    opacity: 0.8;
+    background-color: black;
+}
+
+.background nav img {
+    width: 140px;
+    height: 120px;
+    z-index: 10;
+    position: relative;
+
+}
+
+.background nav {
+    display: flex;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.background nav .buttons {
+    z-index: 10;
+    position: relative;
+}
+
+.hero {
+    height: 70%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 20px;
+    gap: 20px;
+    text-align: center;
+}
+
+.hero> :first-child {
+    font-weight: 900;
+    font-size: 3rem;
+    font-family: sans-serif;
+    text-align: center;
+
+}
+
+.hero> :nth-child(2) {
+    font-weight: 900;
+    font-size: 3rem;
+    font-family: sans-serif;
+    text-align: center;
+
+
+}
+
+.hero> :nth-child(3) {
+    font-weight: 50;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+
+
+}
+
+.hero :nth-child(4) {
+    font-weight: 10;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+
+}
+
+.hero input {
+    height: 20px;
+    width: 300px;
+    position: relative;
+}
+
+.hero .inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.inputs input {
+    margin: auto;
+    height: 50px;
+    width: 350px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0.217);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.167);
+}
+
+
+button {
+    background-color: red;
+    color: white;
+    height: 40px;
+    width: 80px;
+    border-radius: 10%;
+    font-weight: 500;
+    font-size: 15px;
+
+}
+
+.buttons .english {
+    background-color: rgba(255, 255, 255, 0.167);
+    border: 1px solid rgba(255, 255, 255, 0.167);
+    cursor: pointer;
+}
+
+.inputs .start {
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    border-radius: 10%;
+}
+
+.trending {
+    height: 20vh;
+    width: 100vw;
+    background-color: black;
+    border-top: 5px solid rgba(173, 27, 83, 0.648);
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    color: white;
+    margin-bottom: 100px;
+
+}
+
+.trending .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    margin-left: 80px;
+    padding: 50px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.trending .list .item {
+    display: grid;
+    grid-template-columns: 197px 197px 197px 197px 197px;
+    gap: 50px;
+    align-items: center;
+    background-repeat: no-repeat;
+    margin-bottom: 150px;
+
+}
+
+.trending .list .item .movie1 {
+    background-image: url(assets/1.jpg);
+    grid-column: 1;
+    height: 276px;
+    width: 197px;
+    font-size: 150px;
+    color: black;
+    border-radius: 10%;
+
+}
+
+.trending .list .item .movie2 {
+    background-image: url(assets/2.jpg);
+    grid-column: 2;
+    height: 276px;
+    width: 197px;
+    font-size: 100px;
+    color: black;
+    border-radius: 10%;
+
+}
+
+.trending .list .item .movie3 {
+    background-image: url(assets/3.jpg);
+    grid-column: 3;
+    height: 276px;
+    width: 197px;
+    font-size: 100px;
+    color: black;
+    border-radius: 10%;
+
+}
+
+.trending .list .item .movie4 {
+    background-image: url(assets/4.jpg);
+    grid-column: 4;
+    height: 276px;
+    width: 197px;
+    font-size: 100px;
+    color: black;
+    border-radius: 10%;
+
+}
+
+.trending .list .item .movie5 {
+    background-image: url(assets/5.jpg);
+    grid-column: 5;
+    height: 276px;
+    width: 197px;
+    font-size: 100px;
+    color: black;
+    border-radius: 10%;
+
+}
+
+.trending .list .item .movie6 {
+    background-image: url(assets/6.jpg);
+    height: 276px;
+    width: 197px;
+    font-size: 100px;
+    color: black;
+    border-radius: 10%;
+
+}
+
+.trending .list .item .movie7 {
+    background-image: url(assets/7.jpg);
+    height: 276px;
+    width: 197px;
+    font-size: 100px;
+    color: black;
+    border-radius: 10%;
+
+}
+
+.trending .list .item .movie8 {
+    background-image: url(assets/8.jpg);
+    height: 276px;
+    width: 197px;
+    font-size: 100px;
+    color: black;
+    border-radius: 10%;
+
+}
+
+.trending .list .item .movie9 {
+    background-image: url(assets/9.jpg);
+    height: 276px;
+    width: 197px;
+    font-size: 100px;
+    color: black;
+    border-radius: 10%;
+
+}
+
+.trending .list .item .movie10 {
+    background-image: url(assets/10.jpg);
+    height: 276px;
+    width: 197px;
+    font-size: 100px;
+    color: black;
+    border-radius: 10%;
+
+}
+
+.movie1:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.movie2:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.movie3:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.movie4:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.movie5:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.movie6:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.movie7:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.movie8:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.movie9:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.movie10:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+
+.move {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+    font-size: 150px;
+    color: rgba(173, 27, 83, 0.648);
+}
+
+@media screen and (max-width: 1024px) {
+
+    .hero> :first-child,
+    .hero> :nth-child(2) {
+        font-size: 2.5rem;
+    }
+
+    .trending .list .item {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .background nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero> :first-child,
+    .hero> :nth-child(2) {
+        font-size: 2rem;
+    }
+
+    .hero> :nth-child(3),
+    .hero :nth-child(4) {
+        font-size: 16px;
+    }
+
+    .inputs {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .inputs input,
+    .inputs .start {
+        width: 90%;
+    }
+
+    .trending .list .item {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .trending .list {
+        margin-left: 20px;
+        padding: 20px;
+        font-size: 24px;
+    }
+
+    .trending {
+        height: auto;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .hero> :first-child,
+    .hero> :nth-child(2) {
+        font-size: 1.5rem;
+    }
+
+    .hero input {
+        width: 90%;
+    }
+
+    .background nav img {
+        width: 100px;
+        height: auto;
+    }
+
+    .trending .list .item {
+        grid-template-columns: 1fr;
+    }
+
+    .trending .list {
+        font-size: 20px;
+    }
+
+    .movie {
+        height: 220px;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .movie {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 15px;
+    }
+
+    .movie img {
+        border-radius: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .movie {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .movie img {
+        width: 100%;
+        overflow-x: scroll;
+    }
+}
+
+section .main .grids {
+    padding: 200px;
+    z-index: 0;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    height: 100px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 120px;
+    
+
+
+
+}
+
+section .main .grids .first {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: rgba(173, 27, 83, 0.648);
+    border: 2px solid rgba(173, 27, 83, 0.648);
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    cursor: pointer;
+    
+}
+
+section .main .grids .second {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: rgba(173, 27, 83, 0.648);
+    border: 2px solid rgba(173, 27, 83, 0.648);
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+section .main .grids .third {
+    grid-column: 3;
+    grid-row: 1;
+    background-color: rgba(173, 27, 83, 0.648);
+    border: 2px solid rgba(173, 27, 83, 0.648);
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+section .main .grids .fourth {
+    grid-column: 4;
+    grid-row: 1;
+    background-color: rgba(173, 27, 83, 0.648);
+    border: 2px solid rgba(173, 27, 83, 0.648);
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    
+    
+}
+.questions{
+    height: 20px;
+    width: 200px;
+    position: relative;
+    bottom: 200px;
+    right: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 100px;
+}
+.footer .questions>span {
+    display: block;
+    height: 600px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border: 2px solid gray;
+    width: 1100px;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.footer {
+    background-color: black;
+    margin: 500px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 40px 20px;
+}
+
+.footer2>span {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: flex-start;
+}
+
+.footer4,
+.footer5,
+.footer6 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
